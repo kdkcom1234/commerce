@@ -23,4 +23,11 @@ fun main(args: Array<String>) {
 	runApplication<CommerceApplication>(*args)
 }
 
+@RestController
+class HelloController {
+	@GetMapping("/hello")
+	fun hello() : String {
+		return "Hello, Jenkins"
+	}
+}
 
